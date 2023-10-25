@@ -49,28 +49,28 @@ const Header = () => {
 
           <ul className="navbar--links list-style-none">
             <li>
-              <a href="index.html" className="link text-xl">
+              <Link to="/" className="link text-xl">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="about.html" className="link text-xl">
+              <Link to="/about" className="link text-xl">
                 Acerca de Mi
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="portafolio.html" className="link text-xl">
+              <Link to="/portafolio" className="link text-xl">
                 Portafolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="contact.html"
+              <Link
+                to="/contact"
                 type="button"
                 className="button button--primary button--lg text-decoration-none"
               >
                 Contactame
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
