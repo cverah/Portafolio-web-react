@@ -1,0 +1,60 @@
+.section-general-proyect {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.section-description-proyect {
+  padding: 0 32px 0 0;
+}
+
+/* no poner la imagen dentro de un div por que sino noocupa el width al 100% */
+.section-general-proyect img {
+  width: 100%;
+  height: auto;
+}
+
+.section-footer-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.section-footer-buttons a {
+  padding: 8px 30px;
+}
+
+.article-3-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 36px;
+}
+
+.work_networks_page {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#img-team {
+  width: 100%;
+}
+
+
+
+/* media queyr */
+
+@media screen and (max-width:808px) {
+  .section-general-proyect {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .section-general-proyect img {
+    width: 100%;
+    height: auto;
+  }
+}
