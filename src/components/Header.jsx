@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import ContainerLg from "./ContainerLg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isclick, setisclick] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         {/* <!-- <h1 className="heading-md semi-bold header__logo">HEADER</h1> --> */}
 
         <nav className="navbar">
-          <a className="text-decoration-none" href="index.html">
+          <Link to={"/"} className="text-decoration-none">
             <div className="start italic">
               <h1 className="heading-md medium green-900">
                 Cristhian M. Vera Huamani
@@ -29,7 +30,7 @@ const Header = () => {
                 Believe in yourself, and you will achieve it
               </p>
             </div>
-          </a>
+          </Link>
           {/* <!-- # hamburguesa media querie --> */}
           {!isclick && (
             <GiHamburgerMenu

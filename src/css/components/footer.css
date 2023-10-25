@@ -1,5 +1,5 @@
 .footer {
-  background-color: #ABBEB7;
+  background-color: #abbeb7;
   color: var(--text);
   font-style: italic;
 }
@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   gap: 8px;
+  align-items: center;
 }
 
 .footer-contacs img {
@@ -47,7 +48,6 @@
 }
 
 #footer-icons {
-
   width: 25px;
   height: 25px;
 }
