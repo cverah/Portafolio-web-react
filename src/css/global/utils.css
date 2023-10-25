@@ -47,7 +47,6 @@
   background-color: var(--gray-200);
 }
 
-
 .primary-lighter {
   color: var(--primary-lighter);
 }
@@ -77,7 +76,7 @@
 }
 
 .bg-green-800 {
-  background: #0E6655;
+  background: #0e6655;
 }
 
 .primary-dark {
@@ -87,7 +86,6 @@
 .color-white {
   color: var(--white);
 }
-
 
 .light {
   font-weight: 300;
@@ -124,7 +122,6 @@
 .mb-2 {
   margin-bottom: 2rem;
 }
-
 
 /* margin botom de 4px; */
 .mb-1\/4 {
@@ -245,7 +242,14 @@
   row-gap: 12px;
 }
 
-
 #justify-start {
   justify-content: start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-16 {
+  gap: 16px;
 }
