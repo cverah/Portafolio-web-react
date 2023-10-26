@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import SectionPaddingMd from "../components/SectionPaddingMd";
 import ContainerLg from "../components/ContainerLg";
 import Calencly from "../components/components_portafolio/calencly/Calencly";
+import CliviaGenerator from "../components/components_portafolio/clivia_generator/CliviaGenerator";
 
 const Portafolio = () => {
   return (
@@ -17,60 +18,7 @@ const Portafolio = () => {
           </div>
           <div className="article-grid-2columns">
             <Calencly />
-            <article className="article-grid-portafolio">
-              <div className="navbar">
-                <div className="header-article-portafolio">
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-terminal-ubuntu.svg"
-                    alt="icon-terminal-ubuntu"
-                  />
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-ruby.svg"
-                    alt="icon-ruby"
-                  />
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-github.svg"
-                    alt="icon-github"
-                  />
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-json.svg"
-                    alt="icon-json"
-                  />
-                </div>
-                <div className="margin-right">
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/flecha-rigth-45.svg"
-                    alt="flecha-right-45"
-                  />
-                </div>
-              </div>
-              <div className="content-article-portafolio">
-                <h3 className="text-xl semi-bold">
-                  Generador CLIvia (Individual Evaluation)
-                </h3>
-                <p className="text-lg light justify">
-                  Este es un programa que te permite responder 10 preguntas de
-                  genero randomico, por cada respuesta correcta se obtiene 10
-                  puntos, 0 puntos por respuesta incorrecta, al finalizar se te
-                  permitira guardar el nombre del jugador y la opcion de
-                  visualizar los puntajes en orden de merito.
-                </p>
-              </div>
-              <div className="footer-article-portafolio mt-auto">
-                <Link
-                  to="https://github.com/cverah/ruby_Generador_CLIvia"
-                  target="_blank"
-                >
-                  Ver Repositorio
-                </Link>
-                <a href="proyect_page_clivia.html">Pasos de Funcionamiento</a>
-              </div>
-            </article>
+            <CliviaGenerator />
 
             <article className="article-grid-portafolio">
               <div className="navbar">
