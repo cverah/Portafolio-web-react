@@ -1,5 +1,8 @@
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
+import CalencyImg1 from "../../../assets/images/photos/proyect-calencly/calencly-paso1.png";
+import CalencyImg2 from "../../../assets/images/photos/proyect-calencly/calencly-paso2.png";
+import CalencyImg3 from "../../../assets/images/photos/proyect-calencly/calencly-paso3.png";
 
 const RunCalencly = () => {
   return (
@@ -29,11 +32,7 @@ const RunCalencly = () => {
                 visualizar los archivos clonados)
               </li>
             </ul>
-            <img
-              className="br-1/2"
-              src="./assets/images/photos/proyect-calencly/calencly-paso1.png"
-              alt=""
-            />
+            <img className="br-1/2" src={CalencyImg1} alt="img" />
           </article>
 
           <article className="article-grid-item">
@@ -55,11 +54,7 @@ const RunCalencly = () => {
                 la velocidad de descarga de su internet
               </li>
             </ul>
-            <img
-              className="br-1/2"
-              src="./assets/images/photos/proyect-calencly/calencly-paso2.png"
-              alt=""
-            />
+            <img className="br-1/2" src={CalencyImg2} alt="img" />
           </article>
 
           <article className="article-grid-item">
@@ -84,11 +79,7 @@ const RunCalencly = () => {
                 y siguiente el modelo de Happy paths (buen usuario)
               </li>
             </ul>
-            <img
-              className="br-1/2"
-              src="./assets/images/photos/proyect-calencly/calencly-paso3.png"
-              alt=""
-            />
+            <img className="br-1/2" src={CalencyImg3} alt="img3" />
           </article>
         </div>
       </ContainerLg>
