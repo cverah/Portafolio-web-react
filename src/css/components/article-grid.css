@@ -22,23 +22,25 @@
   /* gap: 8px; */
   flex-direction: column;
   /* align-content: center; */
-  padding: 8px;
+  padding: 16px;
   /* gap da espacio en flex y grid en la lineas entrecortadas asimimos da espacio internmente en este caso como es la direccion columna da esacio interno de 10px */
   gap: 10px;
-  justify-content: space-between;
+  border: 2px solid rgb(46, 146, 93);
+  border-radius: 10px;
+  /* justify-content: space-between; */
+  cursor: pointer;
 }
 
 /* hover y no hover */
-.article-grid-item:not(.no-hover):hover {
+.article-grid-item:hover {
   /* background-color: green; */
-  border: 1px solid var(--green-700);
+  border: 3px solid rgb(46, 146, 93);
 }
 
 .article-grid-item a:hover {
   /* background-color: green; */
   text-decoration: underline;
 }
-
 
 #icon-list {
   width: 32px;
@@ -73,11 +75,13 @@
   flex-direction: column;
   padding: 16px;
   gap: 16px;
+  border: 2px solid rgb(46, 146, 93);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .article-grid-portafolio:hover {
   border: 3px solid rgb(46, 146, 93);
-  border-radius: 10px;
 }
 
 .header-article-portafolio {
@@ -118,16 +122,13 @@
 
 .footer-article-portafolio a:hover {
   background-color: var(--green-700);
-
 }
-
 
 /* grilla 2 columnas 55% and 45% */
 
 .article-grid-55-45 {
   display: grid;
   grid-template-columns: 55% 45%;
-
 }
 
 .item-content-description {
@@ -180,7 +181,6 @@
   /* Mantener la proporción de aspecto */
 }
 
-
 @media screen and (max-width: 970px) {
   .article-grid-hobbies {
     display: grid;
@@ -191,7 +191,7 @@
 
 /* media query 2 columnas de 55 y 45*/
 
-@media screen and (max-width:808px) {
+@media screen and (max-width: 808px) {
   .article-grid-55-45 {
     display: grid;
     grid-template-columns: 1fr;
