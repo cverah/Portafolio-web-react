@@ -5,6 +5,7 @@ import Portafolio from "./pages/Portafolio";
 import CalenclyOperation from "./components/components_portafolio/calencly/CalenclyOperation";
 import CliviaOperation from "./components/components_portafolio/clivia_generator/CliviaOperation";
 import InsigthOperation from "./components/components_portafolio/insight/InsigthOperation";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route path="/clivia_generator" element={<CliviaOperation />} />
       <Route path="/insight" element={<InsigthOperation />} />
       {/* {fin rrutas portafolio} */}
-
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
