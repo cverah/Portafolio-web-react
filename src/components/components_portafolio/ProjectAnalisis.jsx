@@ -14,7 +14,11 @@ const ProjectAnalisis = ({ programing_lenguaje, good_practics }) => {
           En nuestro equipo de trabajo fue construido de la sgte manera
         </p>
         <div className="article-3-columns">
-          <article className="article-grid-item" id="justify-start">
+          <article
+            className="article-grid-item"
+            id="justify-start"
+            style={{ border: "none" }}
+          >
             <div>
               <BiSolidTerminal style={{ width: "35px", height: "35px" }} />
             </div>
@@ -32,7 +36,11 @@ const ProjectAnalisis = ({ programing_lenguaje, good_practics }) => {
             </div>
           </article>
 
-          <article className="article-grid-item" id="justify-start">
+          <article
+            className="article-grid-item"
+            id="justify-start"
+            style={{ border: "none" }}
+          >
             <div>
               <BsFileEarmarkCodeFill
                 style={{ width: "35px", height: "35px" }}
@@ -52,7 +60,11 @@ const ProjectAnalisis = ({ programing_lenguaje, good_practics }) => {
             </div>
           </article>
 
-          <article className="article-grid-item" id="justify-start">
+          <article
+            className="article-grid-item"
+            id="justify-start"
+            style={{ border: "none" }}
+          >
             <div>
               <VscGithub style={{ width: "35px", height: "35px" }} />
             </div>

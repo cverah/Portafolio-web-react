@@ -12,7 +12,11 @@ const WorkTeam = ({ first_name, second_name, third_name }) => {
           Nuestro Equipo de Trabajo
         </h2>
         <div className="article-3-columns">
-          <article className="article-grid-item border-none" id="padding-0">
+          <article
+            className="article-grid-item"
+            id="padding-0"
+            style={{ border: "none" }}
+          >
             <img id="img-team" src={ImgCarnetCMVH} alt="img-carnet-CMVH" />
             <div>
               <p className="semi-bold center green-900 text-xl">{first_name}</p>
@@ -34,7 +38,11 @@ const WorkTeam = ({ first_name, second_name, third_name }) => {
             </div>
           </article>
 
-          <article className="article-grid-item border-none" id="padding-0">
+          <article
+            className="article-grid-item"
+            id="padding-0"
+            style={{ border: "none" }}
+          >
             <img id="img-team" src={ImgAnonimus} alt="img-carnet-CMVH" />
             <div>
               <p className="semi-bold center green-900 text-xl">
@@ -55,7 +63,11 @@ const WorkTeam = ({ first_name, second_name, third_name }) => {
             </div>
           </article>
 
-          <article className="article-grid-item" id="padding-0">
+          <article
+            className="article-grid-item"
+            id="padding-0"
+            style={{ border: "none" }}
+          >
             <img id="img-team" src={ImgAnonimus} alt="img-carnet-CMVH" />
             <div>
               <p className="semi-bold center green-900 text-xl">{third_name}</p>

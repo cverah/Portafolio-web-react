@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Portafolio from "./pages/Portafolio";
 import CalenclyOperation from "./components/components_portafolio/calencly/CalenclyOperation";
 import CliviaOperation from "./components/components_portafolio/clivia_generator/CliviaOperation";
+import InsigthOperation from "./components/components_portafolio/insight/InsigthOperation";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* rutas portaflio */}
       <Route path="/calencly_ruby" element={<CalenclyOperation />} />
       <Route path="/clivia_generator" element={<CliviaOperation />} />
+      <Route path="/insight" element={<InsigthOperation />} />
       {/* {fin rrutas portafolio} */}
 
       <Route path="*" element={<Navigate to="/" />} />
