@@ -257,3 +257,9 @@
 .width-100 {
   width: 100%;
 }
+
+/* para el modal no cambiar el nombre */
+.custom-title-class {
+  color: rgb(21, 20, 20);
+  font-size: 24px;
+}

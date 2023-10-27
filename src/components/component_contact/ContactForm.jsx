@@ -1,4 +1,11 @@
 import styled from "@emotion/styled";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { credential_send_email } from "../../credentials_send_email";
+import {
+  messageError,
+  messageSuccess,
+} from "../../messages_modal/modal_messages";
 
 const FamilyCheckbox = styled.div`
   display: grid;
@@ -8,13 +15,34 @@ const FamilyCheckbox = styled.div`
 `;
 
 const ContactForm = () => {
+  const form = useRef();
+
   function handleSend(event) {
     event.preventDefault();
-    console.log("click");
+    const formData = form.current;
+    emailjs
+      .sendForm(
+        credential_send_email.service_id,
+        credential_send_email.template_id,
+        formData,
+        credential_send_email.user_id
+      )
+      .then(
+        (result) => {
+          result.text === "OK"
+            ? messageSuccess(
+                "!Correo Enviado¡, me contactare contigo en el menor tiempo posible, gracias por contactarme"
+              )
+            : messageError(`Ocurrio un problema ${result.text}`);
+        },
+        (error) => {
+          messageError(`Ocurrio un problema ${error}`);
+        }
+      );
   }
   return (
     <div>
-      <form onSubmit={handleSend}>
+      <form ref={form} onSubmit={handleSend}>
         <div className="article-grid-2columns mb-1" id="gap-row-12">
           <article
             className="article-grid-item no-hover"
@@ -26,7 +54,10 @@ const ContactForm = () => {
                 htmlFor="firtsname"
                 className="text-xs light overline mb-1/4 block text-uppercase"
               >
-                Nombres
+                <div style={{ display: "flex", gap: "8px" }}>
+                  Nombres
+                  <p style={{ color: "red", fontWeight: "bold" }}>(*)</p>
+                </div>
               </label>
               <input
                 className="input"
@@ -34,6 +65,7 @@ const ContactForm = () => {
                 name="firtsname"
                 id="firtsname"
                 placeholder="Cristhian"
+                required
               />
             </div>
           </article>
@@ -48,7 +80,10 @@ const ContactForm = () => {
                 htmlFor="lastname"
                 className="text-xs light overline mb-1/4 block text-uppercase"
               >
-                Apellidos
+                <div style={{ display: "flex", gap: "8px" }}>
+                  Apellidos
+                  <p style={{ color: "red", fontWeight: "bold" }}>(*)</p>
+                </div>
               </label>
               <input
                 className="input"
@@ -56,6 +91,7 @@ const ContactForm = () => {
                 name="lastname"
                 id="lastname"
                 placeholder="Vera"
+                required
               />
             </div>
           </article>
@@ -70,7 +106,10 @@ const ContactForm = () => {
                 htmlFor="email"
                 className="text-xs light overline mb-1/4 block text-uppercase"
               >
-                Email
+                <div style={{ display: "flex", gap: "8px" }}>
+                  Email
+                  <p style={{ color: "red", fontWeight: "bold" }}>(*)</p>
+                </div>
               </label>
               <input
                 className="input"
@@ -78,6 +117,7 @@ const ContactForm = () => {
                 name="email"
                 id="email"
                 placeholder="cristhian@gmail.com"
+                required
               />
             </div>
           </article>
@@ -114,7 +154,10 @@ const ContactForm = () => {
                 htmlFor="phone"
                 className="text-xs light overline mb-1/4 block text-uppercase"
               >
-                Celular
+                <div style={{ display: "flex", gap: "8px" }}>
+                  Celular
+                  <p style={{ color: "red", fontWeight: "bold" }}>(*)</p>
+                </div>
               </label>
               <input
                 className="input"
@@ -122,6 +165,7 @@ const ContactForm = () => {
                 name="phone"
                 id="phone"
                 placeholder="928646027"
+                required
               />
             </div>
           </article>
@@ -183,6 +227,7 @@ const ContactForm = () => {
               name="checkbox"
               id="checkbox"
               className="checkbox__input"
+              value="Desea ofertarte algun trabajo"
             />
             <div>
               <label htmlFor="checkbox" className="light text-sm" id="margin-0">
@@ -192,7 +237,6 @@ const ContactForm = () => {
                 className="input__message input__message--help light text-xs gray-500"
                 id="margin-0"
               >
-                {" "}
                 Si buscas ampliar tu equipo
               </span>
             </div>
@@ -204,6 +248,7 @@ const ContactForm = () => {
               name="checkbox"
               id="checkbox"
               className="checkbox__input"
+              value="Desea ofertarte algun proyecto"
             />
             <div>
               <label htmlFor="checkbox" className="light text-sm" id="margin-0">
@@ -224,6 +269,7 @@ const ContactForm = () => {
               name="checkbox"
               id="checkbox"
               className="checkbox__input"
+              value="Desea tu colaboracion"
             />
             <div>
               <label htmlFor="checkbox" className="light text-sm" id="margin-0">
@@ -233,7 +279,6 @@ const ContactForm = () => {
                 className="input__message input__message--help light text-xs gray-500"
                 id="margin-0"
               >
-                {" "}
                 Si buscas ampliar tu equipo
               </span>
             </div>
@@ -245,14 +290,10 @@ const ContactForm = () => {
               name="checkbox"
               id="checkbox"
               className="checkbox__input"
+              value="Otro"
             />
             <div>
-              <label
-                htmlFor="checkbox"
-                className="light text-sm
-            "
-                id="margin-0"
-              >
+              <label htmlFor="checkbox" className="light text-sm" id="margin-0">
                 Otro
               </label>
             </div>
