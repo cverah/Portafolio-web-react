@@ -11,9 +11,35 @@ const WhatsappIconStyle = styled(BsWhatsapp)`
 const FacebookIconStyle = styled(BsFacebook)`
   color: blue;
   font-size: 40px;
+
   &:hover {
     cursor: pointer;
     color: white;
+    -webkit-animation: flip-vertical-fwd 0.6s
+      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    animation: flip-vertical-fwd 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      forwards;
+
+    @-webkit-keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
+    @keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
   }
 `;
 
@@ -23,6 +49,31 @@ const LinkedinIconStyle = styled(BsLinkedin)`
   &:hover {
     cursor: pointer;
     color: white;
+    -webkit-animation: flip-vertical-fwd 0.6s
+      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    animation: flip-vertical-fwd 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      forwards;
+
+    @-webkit-keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
+    @keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
   }
 `;
 const Footer = () => {

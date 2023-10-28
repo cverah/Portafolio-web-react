@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const SectionLastLearning = () => {
   return (
     <div className="article-grid-2columns">
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Mayo 16, 2023
         </small>
@@ -25,7 +25,7 @@ const SectionLastLearning = () => {
         </Link>
       </article>
 
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Junio 16, 2023
         </small>
@@ -49,7 +49,7 @@ const SectionLastLearning = () => {
         </Link>
       </article>
 
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Julio 20, 2023
         </small>
@@ -74,7 +74,7 @@ const SectionLastLearning = () => {
         </Link>
       </article>
 
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Julio 30, 2023
         </small>
@@ -102,7 +102,7 @@ const SectionLastLearning = () => {
         </Link>
       </article>
 
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Agost 30, 2023
         </small>
@@ -125,7 +125,7 @@ const SectionLastLearning = () => {
         </Link>
       </article>
 
-      <article className="article-grid-item">
+      <article className="article-grid-item" style={{ border: "none" }}>
         <small className="semi-bold text-uppercase text-xs overline">
           Octubre 01 , 2023
         </small>
