@@ -7,6 +7,7 @@ import CliviaOperation from "./components/components_portafolio/clivia_generator
 import InsigthOperation from "./components/components_portafolio/insight/InsigthOperation";
 import Contact from "./pages/Contact";
 import ButtonWhatsapp from "./components/ButtonWhatsapp";
+import SomeplashOperation from "./components/components_portafolio/someplash/SomeplashOperation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/calencly_ruby" element={<CalenclyOperation />} />
         <Route path="/clivia_generator" element={<CliviaOperation />} />
         <Route path="/insight" element={<InsigthOperation />} />
+        <Route path="/someplash" element={<SomeplashOperation />} />
         {/* {fin rrutas portafolio} */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
