@@ -5,6 +5,7 @@ import ContainerLg from "../components/ContainerLg";
 import Calencly from "../components/components_portafolio/calencly/Calencly";
 import CliviaGenerator from "../components/components_portafolio/clivia_generator/CliviaGenerator";
 import Insigth from "../components/components_portafolio/insight/Insigth";
+import Someplash from "../components/components_portafolio/someplash/Someplash";
 
 const Portafolio = () => {
   return (
@@ -17,9 +18,10 @@ const Portafolio = () => {
             <p className="text-lg">La práctica construye el dominio</p>
           </div>
           <div className="article-grid-2columns">
-            <Calencly />
-            <CliviaGenerator />
+            <Someplash />
             <Insigth />
+            <CliviaGenerator />
+            <Calencly />
           </div>
         </ContainerLg>
       </SectionPaddingMd>
