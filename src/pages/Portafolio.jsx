@@ -20,52 +20,7 @@ const Portafolio = () => {
           <div className="article-grid-2columns">
             <Calencly />
             <CliviaGenerator />
-
             <Insigth />
-
-            <article className="article-grid-portafolio">
-              <div className="navbar">
-                <div className="header-article-portafolio">
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-terminal-ubuntu.svg"
-                    alt="icon-terminal-ubuntu"
-                  />
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-ruby.svg"
-                    alt="icon-ruby"
-                  />
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/icon-github.svg"
-                    alt="icon-github"
-                  />
-                </div>
-                <div className="margin-right">
-                  <img
-                    className="img-1.5"
-                    src="./assets/images/icons/flecha-rigth-45.svg"
-                    alt="flecha-right-45"
-                  />
-                </div>
-              </div>
-              <div className="content-article-portafolio">
-                <h3 className="text-xl semi-bold text-uppercase">
-                  Esperando New Proyect
-                </h3>
-                <p className="text-lg light">En espera de new proyect.</p>
-              </div>
-              <div className="footer-article-portafolio mt-auto">
-                <Link
-                  to="https://github.com/cverah/insights-ruby-postgres"
-                  target="_blank"
-                >
-                  Ver Repositorio
-                </Link>
-                <a href="proyect_page_insight.html">Pasos de Funcionamiento</a>
-              </div>
-            </article>
           </div>
         </ContainerLg>
       </SectionPaddingMd>

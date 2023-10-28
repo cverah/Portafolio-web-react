@@ -6,21 +6,25 @@ import CalenclyOperation from "./components/components_portafolio/calencly/Calen
 import CliviaOperation from "./components/components_portafolio/clivia_generator/CliviaOperation";
 import InsigthOperation from "./components/components_portafolio/insight/InsigthOperation";
 import Contact from "./pages/Contact";
+import ButtonWhatsapp from "./components/ButtonWhatsapp";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portafolio" element={<Portafolio />} />
-      {/* rutas portaflio */}
-      <Route path="/calencly_ruby" element={<CalenclyOperation />} />
-      <Route path="/clivia_generator" element={<CliviaOperation />} />
-      <Route path="/insight" element={<InsigthOperation />} />
-      {/* {fin rrutas portafolio} */}
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portafolio" element={<Portafolio />} />
+        {/* rutas portaflio */}
+        <Route path="/calencly_ruby" element={<CalenclyOperation />} />
+        <Route path="/clivia_generator" element={<CliviaOperation />} />
+        <Route path="/insight" element={<InsigthOperation />} />
+        {/* {fin rrutas portafolio} */}
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+      <ButtonWhatsapp />
+    </>
   );
 }
 
