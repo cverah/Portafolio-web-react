@@ -22,7 +22,11 @@ const HobbiesAbout = () => {
           </article>
 
           <article className="article-grid-about-item">
-            <div className="article-grid-item center" id="justify-start">
+            <div
+              className="article-grid-item center"
+              id="justify-start"
+              style={{ border: "none" }}
+            >
               <h3 className="heading-md semi-bold">Platos Favoritos</h3>
               <ul className="text-xl light justify">
                 <li>
@@ -41,7 +45,11 @@ const HobbiesAbout = () => {
           </article>
 
           <article className="article-grid-about-item">
-            <div className="article-grid-item center" id="justify-start">
+            <div
+              className="article-grid-item center"
+              id="justify-start"
+              style={{ border: "none" }}
+            >
               <h3 className="heading-md semi-bold">Mis Viajes</h3>
               <p className="text-xl light justify">
                 Me encanta conocer muchos lugares nuevos, mas aquellas donde
@@ -69,7 +77,11 @@ const HobbiesAbout = () => {
           </article>
 
           <article className="article-grid-about-item">
-            <div className="article-grid-item center" id="justify-start">
+            <div
+              className="article-grid-item center"
+              id="justify-start"
+              style={{ border: "none" }}
+            >
               <h3 className="heading-md semi-bold">Mis Deportes Favoritos</h3>
               <p className="text-xl light justify">
                 Me gusta jugar al futbol con mis amigos y compañeros de trabajo,
