@@ -12,7 +12,7 @@ const SectionProfileAbout = () => {
               <strong className="green-800">
                 Ing. Cristhian Mario Vera Huamani
               </strong>
-              , - Ingenierio en Informatica y Sistemas CIP 302485.
+              , - Ingenierio en Informatica y Sistemas.
             </p>
             <p className="text-xl light justify italic mb-1">
               Ingeniero con conocimiento en las distintas ramas de la Ingeniería
