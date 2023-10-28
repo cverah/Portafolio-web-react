@@ -1,0 +1,205 @@
+.article-grid-2columns {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 480px); */
+  /* grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); */
+  /* maximo de pantalla movil 340px */
+  grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr));
+
+  gap: 32px;
+  /* background-color: green; */
+}
+
+.article-grid-hobbies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 15px;
+}
+
+.article-grid-item {
+  /* background-color: aqua; */
+
+  display: flex;
+  /* gap: 8px; */
+  flex-direction: column;
+  /* align-content: center; */
+  padding: 16px;
+  /* gap da espacio en flex y grid en la lineas entrecortadas asimimos da espacio internmente en este caso como es la direccion columna da esacio interno de 10px */
+  gap: 10px;
+  border: 2px solid rgb(46, 146, 93);
+  border-radius: 10px;
+  /* justify-content: space-between; */
+  cursor: pointer;
+}
+
+/* hover y no hover */
+.article-grid-item:hover {
+  /* background-color: green; */
+  border: 3px solid rgb(46, 146, 93);
+}
+
+.article-grid-item a:hover {
+  /* background-color: green; */
+  text-decoration: underline;
+}
+
+#icon-list {
+  width: 32px;
+  height: 32px;
+  /* padding: 0; */
+}
+
+.article-grid-about-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 16px;
+  height: auto;
+}
+
+.article-grid-about-item img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.display-about-right {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text);
+}
+
+.article-grid-portafolio {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  border: 2px solid rgb(46, 146, 93);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.article-grid-portafolio:hover {
+  border: 3px solid rgb(46, 146, 93);
+}
+
+.header-article-portafolio {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.header-article-portafolio img {
+  margin: 8px;
+}
+
+.content-article-portafolio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-article-portafolio {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.footer-article-portafolio a {
+  display: flex;
+  padding: 5px 10px;
+  background-color: var(--green-600);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-article-portafolio a:hover {
+  background-color: var(--green-700);
+}
+
+/* grilla 2 columnas 55% and 45% */
+
+.article-grid-55-45 {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.item-content-description {
+  padding-right: 18px;
+}
+
+/* no poner la imagen dentro de un div por que sino noocupa el width al 100% */
+.article-grid-55-45 img {
+  width: 100%;
+  height: auto;
+}
+
+/* estilos para experiencia labora*/
+
+.work_experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work_experience-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid var(--green-700); */
+}
+
+.work_experience-item-table {
+  text-align: left;
+}
+
+.work_experience-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* imagenes cuadradras dentro de experinecia laboral */
+
+.works-experience-img {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.works-experience-img img {
+  max-width: 100%;
+  /* Ajustar imágenes al ancho del contenedor */
+  height: 100%;
+  /* Mantener la proporción de aspecto */
+}
+
+@media screen and (max-width: 970px) {
+  .article-grid-hobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+    gap: 15px;
+  }
+}
+
+/* media query 2 columnas de 55 y 45*/
+
+@media screen and (max-width: 808px) {
+  .article-grid-55-45 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .article-grid-55-45 img {
+    width: 100%;
+    height: auto;
+  }
+}
