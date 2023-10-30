@@ -1,19 +1,21 @@
 import Footer from "../../Footer";
 import Header from "../../Header";
-import CliviaOperationDescription from "./CliviaOperationDescription";
-import RunCliviaGenerator from "./RunCliviaGenerator";
 import ProjectAnalisis from "../ProjectAnalisis";
 import WorkTeam from "../WorkTeam";
+import DoableJSOperationDescription from "./DoableJSOperationDescription";
+import RunDoableJS from "./RunDoableJS";
 
-const CliviaOperation = () => {
+const DoableJSOperation = () => {
   return (
     <>
       <Header />
-      <CliviaOperationDescription />
-      <RunCliviaGenerator />
+      <DoableJSOperationDescription />
+      <RunDoableJS />
       <ProjectAnalisis
-        programing_lenguaje={"lenguaje de programacion RUBY"}
-        good_practics={"para ello en ruby usamos el RUBOCOP"}
+        programing_lenguaje={
+          "lenguaje de programacion Javascript JS - Single Page"
+        }
+        good_practics={""}
       />
 
       <WorkTeam
@@ -26,4 +28,4 @@ const CliviaOperation = () => {
   );
 };
 
-export default CliviaOperation;
+export default DoableJSOperation;
