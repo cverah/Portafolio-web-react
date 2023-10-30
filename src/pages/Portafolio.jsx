@@ -8,6 +8,7 @@ import Insigth from "../components/components_portafolio/insight/Insigth";
 import Someplash from "../components/components_portafolio/someplash/Someplash";
 import Tweetable from "../components/components_portafolio/Tweetable/Tweetable";
 import DoableJS from "../components/components_portafolio/DoableJs/DoableJS";
+import ChairDNB from "../components/components_portafolio/ChairDNB/ChairDNB";
 
 const Portafolio = () => {
   return (
@@ -20,6 +21,7 @@ const Portafolio = () => {
             <p className="text-lg">La práctica construye el dominio</p>
           </div>
           <div className="article-grid-2columns">
+            <ChairDNB />
             <DoableJS />
             <Tweetable />
             <Someplash />

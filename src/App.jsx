@@ -10,6 +10,7 @@ import ButtonWhatsapp from "./components/ButtonWhatsapp";
 import SomeplashOperation from "./components/components_portafolio/someplash/SomeplashOperation";
 import TweetableOperation from "./components/components_portafolio/Tweetable/TweetableOperation";
 import DoableJSOperation from "./components/components_portafolio/DoableJs/DoableJSOperation";
+import ChairDNBOperation from "./components/components_portafolio/ChairDNB/ChairDNBOperation";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/someplash" element={<SomeplashOperation />} />
         <Route path="/tweetable" element={<TweetableOperation />} />
         <Route path="/doable" element={<DoableJSOperation />} />
+        <Route path="/chairdnb" element={<ChairDNBOperation />} />
         {/* {fin rrutas portafolio} */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />
