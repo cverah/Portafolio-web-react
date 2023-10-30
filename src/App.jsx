@@ -8,6 +8,8 @@ import InsigthOperation from "./components/components_portafolio/insight/Insigth
 import Contact from "./pages/Contact";
 import ButtonWhatsapp from "./components/ButtonWhatsapp";
 import SomeplashOperation from "./components/components_portafolio/someplash/SomeplashOperation";
+import TweetableOperation from "./components/components_portafolio/Tweetable/TweetableOperation";
+import DoableJSOperation from "./components/components_portafolio/DoableJs/DoableJSOperation";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/clivia_generator" element={<CliviaOperation />} />
         <Route path="/insight" element={<InsigthOperation />} />
         <Route path="/someplash" element={<SomeplashOperation />} />
+        <Route path="/tweetable" element={<TweetableOperation />} />
+        <Route path="/doable" element={<DoableJSOperation />} />
         {/* {fin rrutas portafolio} */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />

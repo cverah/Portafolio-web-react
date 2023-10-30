@@ -1,21 +1,22 @@
 import Footer from "../../Footer";
 import Header from "../../Header";
-import CliviaOperationDescription from "./CliviaOperationDescription";
-import RunCliviaGenerator from "./RunCliviaGenerator";
 import ProjectAnalisis from "../ProjectAnalisis";
 import WorkTeam from "../WorkTeam";
+import RunTweetable from "./RunTweetable";
+import TweetableOperationDescription from "./TweetableOperationDescription";
 
-const CliviaOperation = () => {
+const TweetableOperation = () => {
   return (
     <>
       <Header />
-      <CliviaOperationDescription />
-      <RunCliviaGenerator />
+      <TweetableOperationDescription />
+      <RunTweetable />
       <ProjectAnalisis
-        programing_lenguaje={"lenguaje de programacion RUBY"}
+        programing_lenguaje={
+          "lenguaje de programacion RUBY con el framework RUBY ON RAILS y base de datos en POSTGRESQL"
+        }
         good_practics={"para ello en ruby usamos el RUBOCOP"}
       />
-
       <WorkTeam
         first_name={"Cristhian Mario Vera Huamani"}
         second_name="Anonymous"
@@ -26,4 +27,4 @@ const CliviaOperation = () => {
   );
 };
 
-export default CliviaOperation;
+export default TweetableOperation;
