@@ -11,6 +11,7 @@ import SomeplashOperation from "./components/components_portafolio/someplash/Som
 import TweetableOperation from "./components/components_portafolio/Tweetable/TweetableOperation";
 import DoableJSOperation from "./components/components_portafolio/DoableJs/DoableJSOperation";
 import ChairDNBOperation from "./components/components_portafolio/ChairDNB/ChairDNBOperation";
+import EatableOperation from "./components/components_portafolio/eatable/EatableOperation";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/tweetable" element={<TweetableOperation />} />
         <Route path="/doable" element={<DoableJSOperation />} />
         <Route path="/chairdnb" element={<ChairDNBOperation />} />
+        <Route path="/eatable" element={<EatableOperation />} />
         {/* {fin rrutas portafolio} */}
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" />} />

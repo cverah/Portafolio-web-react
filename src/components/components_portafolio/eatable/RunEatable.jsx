@@ -1,14 +1,13 @@
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.png";
-import ChairDNBImg1 from "../../../assets/images/photos/chairdnb/chairdnb-img1.png";
-import ChairDNBImg2 from "../../../assets/images/photos/chairdnb/chairdnb-img2.png";
-import ChairDNBImg3 from "../../../assets/images/photos/chairdnb/chairdnb-img3.png";
-import ChairDNBImg4 from "../../../assets/images/photos/chairdnb/chairdnb-img4.png";
-import ChairDNBImg5 from "../../../assets/images/photos/chairdnb/chairdnb-img5.png";
-import ChairDNBImg6 from "../../../assets/images/photos/chairdnb/chairdnb-img6.png";
+import Eatable from "../../../assets/images/photos/eatable/eatable-img.png";
+import EatableImg1 from "../../../assets/images/photos/eatable/eatable-img1.png";
+import EatableImg2 from "../../../assets/images/photos/eatable/eatable-img2.png";
+import EatableImg3 from "../../../assets/images/photos/eatable/eatable-img3.png";
+import EatableImg4 from "../../../assets/images/photos/eatable/eatable-img4.png";
+import EatableImg5 from "../../../assets/images/photos/eatable/eatable-img5.png";
 
-const RunChairDNB = () => {
+const RunEatable = () => {
   return (
     <SectionPaddingSm background="bg-green-80">
       <ContainerLg>
@@ -23,14 +22,14 @@ const RunChairDNB = () => {
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 1:
               <strong className="semi-bold">
-                Clonamos el repositorio ChairDNB de github
+                Clonamos el repositorio Eatable de github
               </strong>
             </small>
             <p className="regular text-md"> Realizamos lo siguiente:</p>
             <ul className="regular text-md justify">
               <li>
                 En nuestra terminal ejecutamos el comando{" "}
-                <i>git clone git@github.com:cverah/Chairdnb.git</i>
+                <i>git clone git@github.com:cverah/Eatable.git</i>
               </li>
               <li>
                 Terminamos a que termine de clonar y luego le damos un{" "}
@@ -40,7 +39,8 @@ const RunChairDNB = () => {
               <li className="justify">
                 Dentro del visual studio abriremos una terminal y haremos el
                 comando <i>npm install</i> (esto instalara las librerias usadas
-                en el proyecto como proptypes y react router dom).
+                en el proyecto como proptypes, react router dom, emotion, react
+                icons, loader, formik).
               </li>
               <li className="justify">
                 Una vez terminada la instalacion de los paquetes de libreria
@@ -49,7 +49,6 @@ const RunChairDNB = () => {
               </li>
             </ul>
           </article>
-
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 2:
@@ -65,64 +64,58 @@ const RunChairDNB = () => {
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNB}
+              src={Eatable}
               alt=""
             />
           </article>
-
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 3:
-              <strong className="semi-bold">
-                Descubre las aventuras de Chairdnb
-              </strong>
+              <strong className="semi-bold">Crear Comida</strong>
             </small>
             <p className="regular text-md">
-              El api de chairdnb muestra los datos por categoria en esta parte
-              muestra la categoria de Discover Chairdnb adventures.
+              Al dar click en el boton Create Product te redirigira a una nueva
+              ventana en donde tendras que llenar el formulario con los datos
+              solicitados, estos campos del formulario se encuentra validado.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNBImg1}
+              src={EatableImg1}
               alt=""
             />
           </article>
-
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 4:
               <strong className="semi-bold">
-                Alojamiento alrededor del mundo
+                Visualizacion de comida regsitrada
               </strong>
             </small>
             <p className="regular text-md">
-              El api de chairdnb muestra los datos por categoria en esta parte
-              muestra la categoria de Accommodation around the world.
+              Podemos observar que se ha creado una nueva comida sin recarga el
+              page
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNBImg2}
+              src={EatableImg2}
               alt=""
             />
           </article>
-
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 5:
-              <strong className="semi-bold">
-                Experiencias altamente valoradas
-              </strong>
+              <strong className="semi-bold">Ver Comida</strong>
             </small>
             <p className="regular text-md">
-              El api de chairdnb muestra los datos por categoria en esta parte
-              muestra la categoria de Highly rated experiences.
+              Si desplazamos el mouse por el nombre de la comidad se subrayara y
+              podemos ver la descripcion de la comida
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNBImg3}
+              src={EatableImg3}
               alt=""
             />
           </article>
@@ -130,18 +123,18 @@ const RunChairDNB = () => {
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 6:
-              <strong className="semi-bold">
-                Destinos destacados de Chairdnb Plus
-              </strong>
+              <strong className="semi-bold">Actualizar Comida</strong>
             </small>
             <p className="regular text-md">
-              El api de chairdnb muestra los datos por categoria en esta parte
-              muestra la categoria de Featured Chairdnb Plus Destinations.
+              Asimismo exsite la opcion de actulizar comida que se encuentra con
+              el icono del lapiz el cual dirige al formulario con los datos
+              antes ingresados, donde se podra cambiar algun dato si el usuario
+              lo desea.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNBImg4}
+              src={EatableImg4}
               alt=""
             />
           </article>
@@ -149,39 +142,17 @@ const RunChairDNB = () => {
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 7:
-              <strong className="semi-bold">
-                Formulario de busqueda de viaje
-              </strong>
+              <strong className="semi-bold">Eliminar Comida</strong>
             </small>
             <p className="regular text-md">
-              En la imagen de inicio existe un formulario donde se puede buscar
-              por pais, las fechas disponibles y la cantidad de programadores
-              que realizaran el viaje. En este caso buscaremos al pais de
-              MEXICO.
+              Asimismo exsite la opcion de eliminar comida que se encuentra con
+              el icono de un tacho el cual al tratar de eliminar te saldra un
+              modal para la confirmacion respectiva.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={ChairDNBImg5}
-              alt=""
-            />
-          </article>
-
-          <article className="article-grid-item">
-            <small className="text-uppercase text-md overline semi-bold">
-              Paso Nro 8:
-              <strong className="semi-bold">
-                Resultados de busqueda de viaje
-              </strong>
-            </small>
-            <p className="regular text-md">
-              Seguidamente se mostraran los lugares de viaje diponibles en
-              MEXICO.
-            </p>
-            <img
-              className="br-1/2"
-              style={{ border: "1px solid black" }}
-              src={ChairDNBImg6}
+              src={EatableImg5}
               alt=""
             />
           </article>
@@ -191,4 +162,4 @@ const RunChairDNB = () => {
   );
 };
 
-export default RunChairDNB;
+export default RunEatable;
