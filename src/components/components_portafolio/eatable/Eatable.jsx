@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-
 import { BsBoxArrowInUpRight, BsGithub } from "react-icons/bs";
-import { FaTerminal } from "react-icons/fa";
+import { FaReact, FaTerminal } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -10,13 +9,16 @@ const IconStyled = styled.div`
   color: ${(props) => props.color};
 `;
 
-const DoableJS = () => {
+const Eatable = () => {
   return (
     <article className="article-grid-portafolio">
       <div className="navbar">
         <div className="header-article-portafolio">
           <IconStyled color="black">
             <FaTerminal style={{ width: "24px", height: "24px" }} />
+          </IconStyled>
+          <IconStyled color="green">
+            <FaReact style={{ width: "24px", height: "24px" }} />
           </IconStyled>
           <IconStyled color="orange">
             <SiJavascript style={{ width: "24px", height: "24px" }} />
@@ -36,24 +38,23 @@ const DoableJS = () => {
       </div>
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">
-          DOABLE JS (Individual Evaluation)
+          EATABLE (Individual Evaluation)
         </h3>
         <p className="text-lg light justify">
-          El proyecto <strong>Doable</strong> es una aplicacion de un todo list
-          donde tiener la opcion de crear usuario y loguearte y asimismo tener
-          disponible tu lista de tareas en el cual tendras la opcion crear
-          tareas y ordenarlas por varias opciones y asimismo se cuenta con la
-          opcion de marcar como importante y asimismo marcar la tarea que esta
-          completada. Este proyecto se realizo consumiendo de esta URL
-          https://doable-api.herokuapp.com/ .
+          El proyecto <strong>EATABLE</strong> es una aplicacion donde aparecen
+          una lista de comidas en la que el usuario puede observar la imagen la
+          descripcion y el precio, asimismo puede registrar comida, actualizarla
+          y eliminarla (CRUD OPERATION) esto sin la necesidad de hacer un reload
+          page para actualizar los datos. Los datos se estan consumiendo de la
+          URL https://react-eatable-api.herokuapp.com/products y asimismo cuenta
+          con validaciones en el formulario en caso este vacio el campo o no sea
+          un campo valido.
           <br />
-          Asimismo se aplico la parte de fetch y session storage para consumir
-          los servicios y esten grabados hasta que el usuario haga un logout.
-          <br />
-          Asimismo el diseño de la aplicacion se encuentra{" "}
+          Por ultimo el diseño de la aplicacion se baso en el diseño figma que
+          se encuentra en{" "}
           <Link
             to={
-              "https://www.figma.com/file/NNdVoofP8u1kqw3zXAIkek/Doable?type=design&node-id=1-624&mode=design"
+              "https://www.figma.com/file/9iX52juOI5ZghyewK0svxO/Eatable?type=design&node-id=2569-152&mode=design"
             }
             target="_blank"
           >
@@ -62,14 +63,14 @@ const DoableJS = () => {
         </p>
       </div>
       <div className="footer-article-portafolio mt-auto">
-        <Link to="https://github.com/cverah/Doable-JS" target="_blank">
+        <Link to="https://github.com/cverah/Eatable" target="_blank">
           Ver Repositorio
         </Link>
-        <Link to="/doable">Pasos de Funcionamiento</Link>
+        <Link to="/eatable">Pasos de Funcionamiento</Link>
       </div>
       <div className="footer-article-portafolio">
         <Link
-          to={"https://doable-cmvh.netlify.app/"}
+          to={"https://eatable-cmvh.netlify.app/"}
           target="_blank"
           style={{ backgroundColor: "brown" }}
         >
@@ -80,4 +81,4 @@ const DoableJS = () => {
   );
 };
 
-export default DoableJS;
+export default Eatable;

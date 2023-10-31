@@ -1,14 +1,14 @@
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import Doable from "../../../assets/images/photos/doable/doable.png";
-import DoableImg1 from "../../../assets/images/photos/doable/doable-img1.png";
-import DoableImg2 from "../../../assets/images/photos/doable/doable-img2.png";
-import DoableImg3 from "../../../assets/images/photos/doable/doable-img3.png";
-import DoableImg4 from "../../../assets/images/photos/doable/doable-img4.png";
-import DoableImg5 from "../../../assets/images/photos/doable/doable-img5.png";
-import DoableImg6 from "../../../assets/images/photos/doable/doable-img6.png";
+import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.png";
+import ChairDNBImg1 from "../../../assets/images/photos/chairdnb/chairdnb-img1.png";
+import ChairDNBImg2 from "../../../assets/images/photos/chairdnb/chairdnb-img2.png";
+import ChairDNBImg3 from "../../../assets/images/photos/chairdnb/chairdnb-img3.png";
+import ChairDNBImg4 from "../../../assets/images/photos/chairdnb/chairdnb-img4.png";
+import ChairDNBImg5 from "../../../assets/images/photos/chairdnb/chairdnb-img5.png";
+import ChairDNBImg6 from "../../../assets/images/photos/chairdnb/chairdnb-img6.png";
 
-const RunDoableJS = () => {
+const RunChairDNB = () => {
   return (
     <SectionPaddingSm background="bg-green-80">
       <ContainerLg>
@@ -23,14 +23,14 @@ const RunDoableJS = () => {
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 1:
               <strong className="semi-bold">
-                Clonamos el repositorio DoableJS de github
+                Clonamos el repositorio ChairDNB de github
               </strong>
             </small>
             <p className="regular text-md"> Realizamos lo siguiente:</p>
             <ul className="regular text-md justify">
               <li>
                 En nuestra terminal ejecutamos el comando{" "}
-                <i>git clone git@github.com:cverah/Doable-JS.git</i>
+                <i>git clone git@github.com:cverah/Chairdnb.git</i>
               </li>
               <li>
                 Terminamos a que termine de clonar y luego le damos un{" "}
@@ -38,10 +38,14 @@ const RunDoableJS = () => {
                 code)
               </li>
               <li className="justify">
-                Ejecutamos el proyecto ejecutando el archivo index.html o
-                tambien posemos hacer un live server al archivo index.html para
-                que muestre el proyecto doable. (no requiere instalacion de
-                alguna paquete).
+                Dentro del visual studio abriremos una terminal y haremos el
+                comando <i>npm install</i> (esto instalara las librerias usadas
+                en el proyecto como proptypes y react router dom).
+              </li>
+              <li className="justify">
+                Una vez terminada la instalacion de los paquetes de libreria
+                realizaremos un npm run dev para que empice a correr nuestro
+                proyecto y abrirnos en el navegador.
               </li>
             </ul>
           </article>
@@ -55,12 +59,13 @@ const RunDoableJS = () => {
             </small>
             <p className="regular text-md">
               Una vez instalado realizado el paso uno deberia mostrar lo
-              siguiente:
+              siguiente en la ruta por lo general en{" "}
+              <i>http://127.0.0.1:5173/</i>
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={Doable}
+              src={ChairDNB}
               alt=""
             />
           </article>
@@ -68,16 +73,18 @@ const RunDoableJS = () => {
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 3:
-              <strong className="semi-bold">Creacion de Usuario</strong>
+              <strong className="semi-bold">
+                Descubre las aventuras de Chairdnb
+              </strong>
             </small>
             <p className="regular text-md">
-              Al dar click en create account te puedes crear una nueva cuenta de
-              usuario solo requiere poner el correo y la clave
+              El api de chairdnb muestra los datos por categoria en esta parte
+              muestra la categoria de Discover Chairdnb adventures.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg1}
+              src={ChairDNBImg1}
               alt=""
             />
           </article>
@@ -85,15 +92,18 @@ const RunDoableJS = () => {
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 4:
-              <strong className="semi-bold">Iniciar Sesion</strong>
+              <strong className="semi-bold">
+                Alojamiento alrededor del mundo
+              </strong>
             </small>
             <p className="regular text-md">
-              Una vez creado tu usuario puedes iniciar sesion en Login
+              El api de chairdnb muestra los datos por categoria en esta parte
+              muestra la categoria de Accommodation around the world.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg2}
+              src={ChairDNBImg2}
               alt=""
             />
           </article>
@@ -101,17 +111,18 @@ const RunDoableJS = () => {
           <article className="article-grid-item">
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 5:
-              <strong className="semi-bold">Creacion de tareas</strong>
+              <strong className="semi-bold">
+                Experiencias altamente valoradas
+              </strong>
             </small>
             <p className="regular text-md">
-              Una vez logueado puedes crear las tareas que deseas insertando la
-              descripcion de la tarea y la fecha en que deberia terminarse dicha
-              tarea, luego dar click en add task.
+              El api de chairdnb muestra los datos por categoria en esta parte
+              muestra la categoria de Highly rated experiences.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg3}
+              src={ChairDNBImg3}
               alt=""
             />
           </article>
@@ -120,18 +131,17 @@ const RunDoableJS = () => {
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 6:
               <strong className="semi-bold">
-                Marcar tareas completadas e importantes
+                Destinos destacados de Chairdnb Plus
               </strong>
             </small>
             <p className="regular text-md">
-              Una vez creada las tareas puedes marcar las tareas como
-              completadas dando check y/o tambien como importantes dando click
-              en el icono con el signo de admiracion.
+              El api de chairdnb muestra los datos por categoria en esta parte
+              muestra la categoria de Featured Chairdnb Plus Destinations.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg4}
+              src={ChairDNBImg4}
               alt=""
             />
           </article>
@@ -140,18 +150,19 @@ const RunDoableJS = () => {
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 7:
               <strong className="semi-bold">
-                Ordenas Tareas (alfabeto, fecha y importancia)
+                Formulario de busqueda de viaje
               </strong>
             </small>
             <p className="regular text-md">
-              Tambien se cuenta con la opcion de ordenar tarea por alfabeto, por
-              fecha y importancia solo debes dar click en el select y
-              seleccionar
+              En la imagen de inicio existe un formulario donde se puede buscar
+              por pais, las fechas disponibles y la cantidad de programadores
+              que realizaran el viaje. En este caso buscaremos al pais de
+              MEXICO.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg5}
+              src={ChairDNBImg5}
               alt=""
             />
           </article>
@@ -160,17 +171,17 @@ const RunDoableJS = () => {
             <small className="text-uppercase text-md overline semi-bold">
               Paso Nro 8:
               <strong className="semi-bold">
-                Ordenas Tareas (pendiente e importante)
+                Resultados de busqueda de viaje
               </strong>
             </small>
             <p className="regular text-md">
-              Finalmente tambien tienes la opcion de ordenar la tarea por
-              pendientes y/o importantes para mejor filtracion de resultados
+              Seguidamente se mostraran los lugares de viaje diponibles en
+              MEXICO.
             </p>
             <img
               className="br-1/2"
               style={{ border: "1px solid black" }}
-              src={DoableImg6}
+              src={ChairDNBImg6}
               alt=""
             />
           </article>
@@ -180,4 +191,4 @@ const RunDoableJS = () => {
   );
 };
 
-export default RunDoableJS;
+export default RunChairDNB;
