@@ -1,11 +1,45 @@
 import { Link } from "react-router-dom";
-import { BsFacebook, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
 import styled from "@emotion/styled";
 
 const WhatsappIconStyle = styled(BsWhatsapp)`
   color: green;
   font-size: 30px;
+`;
+
+const GitHubIconStyle = styled(BsGithub)`
+  color: black;
+  font-size: 40px;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    -webkit-animation: flip-vertical-fwd 0.6s
+      cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    animation: flip-vertical-fwd 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      forwards;
+
+    @-webkit-keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
+    @keyframes flip-vertical-fwd {
+      0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+      }
+      100% {
+        -webkit-transform: translateZ(160px) rotateY(360deg);
+        transform: translateZ(160px) rotateY(360deg);
+      }
+    }
+  }
 `;
 
 const FacebookIconStyle = styled(BsFacebook)`
@@ -94,6 +128,9 @@ const Footer = () => {
             <div className="footer-grid-item text-xl">
               <strong>Mis Redes Sociales</strong>
               <div className="footer-contacs" id="gap-1.25rem">
+                <Link to="https://github.com/cverah" target="_blank">
+                  <GitHubIconStyle />
+                </Link>
                 <Link
                   to="https://www.facebook.com/cristianmario.verahuamani"
                   target="_blank"
