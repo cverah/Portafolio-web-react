@@ -17,7 +17,7 @@ export const latest_learnings = [
       incorporara tanto la programación funcional como la imperativa. A
       menudo ha manifestado que está “tratando de hacer que Ruby sea
       natural, no simple”, de una forma que se asemeje a la vida real.`,
-    link: "https://www.ruby-lang.org/es/",
+    link: "https://github.com/cverah/ruby-CalenCly",
   },
 
   {
@@ -26,7 +26,7 @@ export const latest_learnings = [
     title: "Aprendiendo HTML y CSS en 2 semanas",
     content: `Para crear sitios web, debes conocer el HTML — la tecnología fundamental que se utiliza para definir la estructura de una página web. HTML se utiliza para especificar si tu contenido web se debe reconocer como un párrafo, lista, encabezado, enlace, imagen, reproductor multimedia, formulario o uno de los muchos otros elementos
     disponibles`,
-    link: "https://developer.mozilla.org/es/docs/Learn/HTML",
+    link: "https://github.com/cverah/portafolio-web-CMVH",
   },
 
   {
@@ -40,7 +40,7 @@ export const latest_learnings = [
     inner joins, para finalmente hacer procedimieento almacenados y
     backups del servidor de datos, esta parte nos ayudara muchos en la
     creacion de API REST.`,
-    link: "https://www.postgresql.org/",
+    link: "https://github.com/cverah/insights-ruby-postgres",
   },
 
   {
@@ -57,7 +57,7 @@ export const latest_learnings = [
     belongs_to), validaciones, creacion de semillas, migraciones, mandejo
     de modelos para manejo de datos, authenticacion, bcrypt, jwt, test,
     creacion de API.`,
-    link: "https://rubyonrails.org/",
+    link: "https://github.com/cverah/Tweetable-Rails",
   },
 
   {
@@ -65,7 +65,7 @@ export const latest_learnings = [
     date: "2023-08-30",
     title: "Aprendiendo JAVASCRIPT en 4 semanas",
     content: `JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Se conocio el manejo de variables array, objetos (primordial), manejo del DOM, funciones constructoras (this), manejo de funciones asincronas, manejo de datos APIS con fecth y axios, resolucion de promesas con then, catch y el asyn awaiy para finalmente conocer el test de renderizado en las paginas web.`,
-    link: "https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
+    link: "https://github.com/cverah/Doable-JS",
   },
 
   {
@@ -79,6 +79,6 @@ export const latest_learnings = [
       llamadas componentes. Se aprendio el manejo del DOM en componentes,
       variables de estado, manejo de emotion, proptypes, UseEffect, useRef,
       input controlados, React Router Dom y test con Jest.`,
-    link: "https://es.legacy.reactjs.org/",
+    link: "https://github.com/cverah/Eatable",
   },
 ];

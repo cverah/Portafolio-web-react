@@ -5,7 +5,6 @@ import SectionPaddingSm from "../components/SectionPaddingSm";
 import ExperienciaAbout from "../components/components_about/ExperienciaAbout";
 import HobbiesAbout from "../components/components_about/HobbiesAbout";
 import SectionProfileAbout from "../components/components_about/SectionProfileAbout";
-import SkillsAbout from "../components/components_about/SkillsAbout";
 
 const About = () => {
   return (
@@ -36,10 +35,13 @@ const About = () => {
             </div>
           </div>
           <ExperienciaAbout />
-          <SkillsAbout />
-          <HobbiesAbout />
         </ContainerLg>
       </SectionPaddingSm>
+
+      <div style={{ padding: "0", margin: "0" }}>
+        <HobbiesAbout />
+      </div>
+
       <Footer />
     </>
   );
