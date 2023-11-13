@@ -55,7 +55,7 @@ const HomeCapstone = () => {
           favoritos y contactar al usuario en caso sea de su agrado la vivienda
           o apartamento.
           <br />
-          La API del proyecto esta despelgado en render en la URL
+          La API del proyecto esta desplegado en render en la URL
           https://getthathome-api.onrender.com/
           <br />
           Por ultimo el diseño de la aplicacion se baso en el diseño figma que
