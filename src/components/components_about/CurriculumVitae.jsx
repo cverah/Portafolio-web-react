@@ -51,13 +51,13 @@ const CurriculumVitae = () => {
         <article className="article-grid-portafolio" style={{ border: "none" }}>
           <LinkCv
             href="/src/assets/pdfs/CV_CMVH_ES.pdf"
-            download="CV_CRISTHIAN_VERA_ES"
+            download="CV_CRISTHIAN_VERA_ES.pdf"
           >
             Ver CV Digital - Español
           </LinkCv>
           <LinkCv
             href="/src/assets/pdfs/CV_CMVH_EN.pdf"
-            download="CV_CRISTHIAN_VERA_EN"
+            download="CV_CRISTHIAN_VERA_EN.pdf"
           >
             Ver CV Digital - Ingles
           </LinkCv>
