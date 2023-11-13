@@ -4,6 +4,7 @@ import ContainerLg from "../components/ContainerLg";
 import SectionProfile from "../components/components_home/SectionProfile";
 import SectionLastLearning from "../components/components_home/SectionLastLearning";
 import Footer from "../components/Footer";
+import SkillsAbout from "../components/components_about/SkillsAbout";
 
 const Home = () => {
   return (
@@ -16,6 +17,10 @@ const Home = () => {
       </SectionPaddingSm>
 
       <SectionPaddingSm background="bg-green-80">
+        <SkillsAbout />
+      </SectionPaddingSm>
+
+      <SectionPaddingSm background="bg-gray-200">
         <ContainerLg>
           <div className="center mb-1">
             <h2 className="heading-lg mb-1/4">Ultimos Aprendizajes</h2>

@@ -2,16 +2,22 @@ import ContainerLg from "../components/ContainerLg";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SectionPaddingSm from "../components/SectionPaddingSm";
+import CurriculumVitae from "../components/components_about/CurriculumVitae";
 import ExperienciaAbout from "../components/components_about/ExperienciaAbout";
 import HobbiesAbout from "../components/components_about/HobbiesAbout";
 import SectionProfileAbout from "../components/components_about/SectionProfileAbout";
-import SkillsAbout from "../components/components_about/SkillsAbout";
 
 const About = () => {
   return (
     <>
       <Header />
       <SectionProfileAbout />
+      <SectionPaddingSm background="bg-green-10">
+        <ContainerLg>
+          <CurriculumVitae />
+        </ContainerLg>
+      </SectionPaddingSm>
+
       <SectionPaddingSm background="bg-green-80">
         <ContainerLg>
           <div className="center mb-1">
@@ -35,11 +41,15 @@ const About = () => {
               </a>
             </div>
           </div>
+
           <ExperienciaAbout />
-          <SkillsAbout />
-          <HobbiesAbout />
         </ContainerLg>
       </SectionPaddingSm>
+
+      <div style={{ padding: "0", margin: "0" }}>
+        <HobbiesAbout />
+      </div>
+
       <Footer />
     </>
   );
