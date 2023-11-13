@@ -57,7 +57,7 @@ const CurriculumVitae = () => {
             Ver CV Digital - Español
           </LinkCv>
           <LinkCv
-            href="/src/assets/pdfs/CV_CMVH_ES.pdf"
+            href="/assets/pdfs/CV_CMVH_ES.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
