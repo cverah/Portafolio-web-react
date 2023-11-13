@@ -52,7 +52,7 @@ const CurriculumVitae = () => {
           <LinkCv href="/pdfs/CV_CMVH_ES.pdf" download="CV_CMVH_ES.pdf">
             Ver CV Digital - Español
           </LinkCv>
-          <LinkCv href="/pdfs/CV_CMVH_EN.pdf" download="CV_CMVH_ES.pdf">
+          <LinkCv href="/pdfs/CV_CMVH_EN.pdf" download="CV_CMVH_EN.pdf">
             Ver CV Digital - Ingles
           </LinkCv>
         </article>
