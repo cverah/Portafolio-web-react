@@ -75,6 +75,10 @@
   background: var(--green-80);
 }
 
+.bg-green-10 {
+  background-color: #e0e8d8;
+}
+
 .bg-green-800 {
   background: #0e6655;
 }
