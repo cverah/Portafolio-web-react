@@ -49,10 +49,18 @@ const CurriculumVitae = () => {
         style={{ gap: "8px", alignItems: "center" }}
       >
         <article className="article-grid-portafolio" style={{ border: "none" }}>
-          <LinkCv href="/src/assets/pdfs/CV_CMVH_ES.pdf" target="_blank">
+          <LinkCv
+            href="/src/assets/pdfs/CV_CMVH_ES.pdf"
+            download="CV_CRISTHIAN_VERA_ES"
+            target="_blank"
+          >
             Ver CV Digital - Español
           </LinkCv>
-          <LinkCv href="/src/assets/pdfs/CV_CMVH_ES.pdf" target="_blank">
+          <LinkCv
+            href="/src/assets/pdfs/CV_CMVH_ES.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ver CV Digital - Ingles
           </LinkCv>
         </article>

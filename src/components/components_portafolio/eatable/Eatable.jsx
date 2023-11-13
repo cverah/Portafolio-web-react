@@ -74,7 +74,7 @@ const Eatable = () => {
           target="_blank"
           style={{ backgroundColor: "brown" }}
         >
-          Ver Proyecto
+          VER DEMO
         </Link>
       </div>
     </article>

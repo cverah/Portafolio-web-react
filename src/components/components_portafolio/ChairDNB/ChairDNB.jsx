@@ -39,7 +39,7 @@ const ChairDNB = () => {
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">CHAIR DNB</h3>
         <p className="text-lg light justify">
-          El proyecto <strong>cHAIR DNB</strong> es una aplicacion de lugares a
+          El proyecto <strong>CHAIR DNB</strong> es una aplicacion de lugares a
           donde puedes realizar viajes puesto que muestra las imagenes, precios
           las puntuaciones, el lugar, y otros mas datos, esta informacion se
           logro sacar de consumiendo una API que esta en la
@@ -70,7 +70,7 @@ const ChairDNB = () => {
           target="_blank"
           style={{ backgroundColor: "brown" }}
         >
-          Ver Proyecto
+          VER DEMO
         </Link>
       </div>
     </article>
