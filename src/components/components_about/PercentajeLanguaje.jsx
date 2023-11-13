@@ -1,5 +1,10 @@
 import "./percentaje_language.css";
-import { BiLogoCss3, BiLogoHtml5, BiLogoJavascript } from "react-icons/bi";
+import {
+  BiLogoCss3,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoReact,
+} from "react-icons/bi";
 import { SiRubyonrails } from "react-icons/si";
 
 const PercentajeLanguaje = () => {
@@ -71,13 +76,12 @@ const PercentajeLanguaje = () => {
         <span
           className="title"
           style={{
-            color: "yellowgreen",
             display: "flex",
             alignItems: "center",
             gap: "8px",
           }}
         >
-          <BiLogoCss3 />
+          <BiLogoReact style={{ color: "green" }} />
           REACT
         </span>
         <div className="skill-bar">
