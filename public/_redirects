@@ -1,1 +1,7 @@
+# _redirects
+
+# Redirección para archivos PDF en la carpeta src/assets/pdfs/
+/src/assets/pdfs/* /src/assets/pdfs/:splat 200
+
+# Redirección predeterminada (esto depende de tu configuración)
 /* /index.html 200
