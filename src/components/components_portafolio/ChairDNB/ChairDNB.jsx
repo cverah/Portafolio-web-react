@@ -4,9 +4,16 @@ import { FaReact, FaTerminal } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import ChairDNBProyect from "../../../assets/images/photos/chairdnb/chairdnb.webp";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const ChairDNB = () => {
@@ -36,6 +43,7 @@ const ChairDNB = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={ChairDNBProyect} alt="img-gethome" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">CHAIR DNB</h3>
         <p className="text-lg light justify">

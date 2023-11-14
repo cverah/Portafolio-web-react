@@ -4,9 +4,16 @@ import { BsBoxArrowInUpRight, BsGithub } from "react-icons/bs";
 import { FaTerminal } from "react-icons/fa";
 import { SiRuby, SiRubyonrails } from "react-icons/si";
 import { Link } from "react-router-dom";
+import ImgTweetable from "../../../assets/images/photos/tweetable/img-tweetable.png";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const Tweetable = () => {
@@ -36,6 +43,7 @@ const Tweetable = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={ImgTweetable} alt="img-tweetable" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">
           Tweetable (Individual Evaluation)

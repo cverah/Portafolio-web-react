@@ -1,12 +1,12 @@
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.png";
-import ChairDNBImg1 from "../../../assets/images/photos/chairdnb/chairdnb-img1.png";
-import ChairDNBImg2 from "../../../assets/images/photos/chairdnb/chairdnb-img2.png";
-import ChairDNBImg3 from "../../../assets/images/photos/chairdnb/chairdnb-img3.png";
-import ChairDNBImg4 from "../../../assets/images/photos/chairdnb/chairdnb-img4.png";
-import ChairDNBImg5 from "../../../assets/images/photos/chairdnb/chairdnb-img5.png";
-import ChairDNBImg6 from "../../../assets/images/photos/chairdnb/chairdnb-img6.png";
+import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.webp";
+import ChairDNBImg1 from "../../../assets/images/photos/chairdnb/chairdnb-img1.webp";
+import ChairDNBImg2 from "../../../assets/images/photos/chairdnb/chairdnb-img2.webp";
+import ChairDNBImg3 from "../../../assets/images/photos/chairdnb/chairdnb-img3.webp";
+import ChairDNBImg4 from "../../../assets/images/photos/chairdnb/chairdnb-img4.webp";
+import ChairDNBImg5 from "../../../assets/images/photos/chairdnb/chairdnb-img5.webp";
+import ChairDNBImg6 from "../../../assets/images/photos/chairdnb/chairdnb-img6.webp";
 
 const RunChairDNB = () => {
   return (

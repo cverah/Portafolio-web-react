@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import Eatable from "../../../assets/images/photos/eatable/eatable-img.png";
+import Eatable from "../../../assets/images/photos/eatable/eatable-img.webp";
 
 const EatableOperationDescription = () => {
   return (

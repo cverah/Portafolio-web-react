@@ -2,9 +2,9 @@ import ContainerLg from "../ContainerLg";
 import SectionPaddingSm from "../SectionPaddingSm";
 import ImgTallarinGallina from "../../assets/images/photos/tallarin-gallina.jpeg";
 import ImgTrioMarino from "../../assets/images/photos/triomarino.jpg";
-import ImgHuacachina from "../../assets/images/photos/img-huacachina.jpg";
-import ImgUrosPuno from "../../assets/images/photos/img-uros-puno.jpg";
-import ImgFutbol from "../../assets/images/photos/img-futbol.jpg";
+import ImgHuacachina from "../../assets/images/photos/img-huacachina.webp";
+import ImgUrosPuno from "../../assets/images/photos/img-uros-puno.webp";
+import ImgFutbol from "../../assets/images/photos/img-futbol.webp";
 import ImgMotoHonda from "../../assets/images/photos/img-motohonda.jpg";
 
 const HobbiesAbout = () => {

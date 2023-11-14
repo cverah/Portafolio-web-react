@@ -1,11 +1,11 @@
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import Eatable from "../../../assets/images/photos/eatable/eatable-img.png";
-import EatableImg1 from "../../../assets/images/photos/eatable/eatable-img1.png";
-import EatableImg2 from "../../../assets/images/photos/eatable/eatable-img2.png";
-import EatableImg3 from "../../../assets/images/photos/eatable/eatable-img3.png";
-import EatableImg4 from "../../../assets/images/photos/eatable/eatable-img4.png";
-import EatableImg5 from "../../../assets/images/photos/eatable/eatable-img5.png";
+import Eatable from "../../../assets/images/photos/eatable/eatable-img.webp";
+import EatableImg1 from "../../../assets/images/photos/eatable/eatable-img1.webp";
+import EatableImg2 from "../../../assets/images/photos/eatable/eatable-img2.webp";
+import EatableImg3 from "../../../assets/images/photos/eatable/eatable-img3.webp";
+import EatableImg4 from "../../../assets/images/photos/eatable/eatable-img4.webp";
+import EatableImg5 from "../../../assets/images/photos/eatable/eatable-img5.webp";
 
 const RunEatable = () => {
   return (

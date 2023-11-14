@@ -1,6 +1,6 @@
 import ContainerLg from "../ContainerLg";
 import SectionPaddingSm from "../SectionPaddingSm";
-import ImgGraduacion from "../../assets/images/photos/img-graduacion.jpg";
+import ImgGraduacion from "../../assets/images/photos/img-graduacion.webp";
 
 const SectionProfileAbout = () => {
   return (
