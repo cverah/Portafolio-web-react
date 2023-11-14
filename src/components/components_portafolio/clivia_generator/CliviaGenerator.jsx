@@ -3,9 +3,16 @@ import { BsBoxArrowInUpRight, BsFiletypeJson, BsGithub } from "react-icons/bs";
 import { FaTerminal } from "react-icons/fa";
 import { SiRuby } from "react-icons/si";
 import { Link } from "react-router-dom";
+import ImgClivia from "../../../assets/images/photos/proyect-clivia/img-clivia-generator.png";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const CliviaGenerator = () => {
@@ -32,6 +39,7 @@ const CliviaGenerator = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={ImgClivia} alt="img-clivia" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold">
           Generador CLIvia (Individual Evaluation)

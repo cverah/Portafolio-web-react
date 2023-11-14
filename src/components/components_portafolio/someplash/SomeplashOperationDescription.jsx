@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import ImgSomeplash from "../../../assets/images/photos/someplash/someplash-img7.png";
+import ImgSomeplash from "../../../assets/images/photos/someplash/someplash-img7.webp";
 
 const SomeplashOperationDescription = () => {
   return (

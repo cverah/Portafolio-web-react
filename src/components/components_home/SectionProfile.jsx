@@ -1,4 +1,4 @@
-import ImgCMVH from "../../assets/images/photos/img-CMVH.jpg";
+import ImgCMVH from "../../assets/images/photos/img-CMVH.webp";
 
 const SectionProfile = () => {
   return (

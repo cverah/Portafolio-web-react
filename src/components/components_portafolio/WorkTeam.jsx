@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import ImgCarnetCMVH from "../../assets/images/photos/img-carnet-CMVH.jpg";
+import ImgCarnetCMVH from "../../assets/images/photos/img-carnet-CMVH.webp";
 import ImgAnonimus from "../../assets/images/photos/img-persona-anonima.png";
 
 const WorkTeam = ({ first_name, second_name, third_name }) => {

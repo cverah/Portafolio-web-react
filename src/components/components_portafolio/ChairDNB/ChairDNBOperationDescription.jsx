@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ContainerLg from "../../ContainerLg";
 import SectionPaddingSm from "../../SectionPaddingSm";
-import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.png";
+import ChairDNB from "../../../assets/images/photos/chairdnb/chairdnb.webp";
 
 const ChairDNBOperationDescription = () => {
   return (
@@ -52,7 +52,7 @@ const ChairDNBOperationDescription = () => {
                 to="https://chairdnb-cmvh.netlify.app/"
                 target="_blank"
               >
-                Ver Proyecto
+                VER DEMO
               </Link>
             </div>
           </div>

@@ -4,9 +4,16 @@ import { FaReact, FaTerminal } from "react-icons/fa";
 import { SiJavascript, SiRubyonrails } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import GetHome from "../../../assets/images/photos/gethome/getthathome.webp";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const HomeCapstone = () => {
@@ -39,6 +46,7 @@ const HomeCapstone = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={GetHome} alt="img-gethome" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">GET THAT HOME</h3>
         <p className="text-lg light justify">

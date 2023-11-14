@@ -49,6 +49,7 @@ const CurriculumVitae = () => {
         style={{ gap: "8px", alignItems: "center" }}
       >
         <article className="article-grid-portafolio" style={{ border: "none" }}>
+          {/* download mismo nombre que el pdf sino error saldra */}
           <LinkCv href="/pdfs/CV_CMVH_ES.pdf" download="CV_CMVH_ES.pdf">
             Ver CV Digital - Español
           </LinkCv>

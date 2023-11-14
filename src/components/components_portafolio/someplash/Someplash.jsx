@@ -4,9 +4,16 @@ import { BsBoxArrowInUpRight, BsGithub } from "react-icons/bs";
 import { FaTerminal } from "react-icons/fa";
 import { SiRuby, SiRubyonrails } from "react-icons/si";
 import { Link } from "react-router-dom";
+import ImgSomeplash from "../../../assets/images/photos/someplash/someplash-img7.webp";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const Someplash = () => {
@@ -36,6 +43,7 @@ const Someplash = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={ImgSomeplash} alt="img-sompelash" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold text-uppercase">Someplash</h3>
         <p className="text-lg light justify">

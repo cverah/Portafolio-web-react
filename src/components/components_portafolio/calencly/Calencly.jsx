@@ -3,9 +3,16 @@ import { BsBoxArrowInUpRight, BsGithub } from "react-icons/bs";
 import { FaTerminal } from "react-icons/fa";
 import { SiRuby } from "react-icons/si";
 import { Link } from "react-router-dom";
+import ImgCalencly from "../../../assets/images/photos/svg-calencly.svg";
 
 const IconStyled = styled.div`
   color: ${(props) => props.color};
+`;
+
+const ImgProyect = styled.img`
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
 `;
 
 const Calencly = () => {
@@ -29,6 +36,7 @@ const Calencly = () => {
           </IconStyled>
         </div>
       </div>
+      <ImgProyect src={ImgCalencly} alt="img-calencly" />
       <div className="content-article-portafolio">
         <h3 className="text-xl semi-bold">CalenCLI</h3>
         <p className="text-lg light">

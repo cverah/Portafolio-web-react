@@ -9,13 +9,13 @@ import ImgSomeplash4_1 from "../../../assets/images/photos/someplash/someplash-i
 import ImgSomeplash4_2 from "../../../assets/images/photos/someplash/someplash-img4-2.png";
 import ImgSomeplash5 from "../../../assets/images/photos/someplash/someplash-img5.png";
 import ImgSomeplash6 from "../../../assets/images/photos/someplash/someplash-img6.png";
-import ImgSomeplash7 from "../../../assets/images/photos/someplash/someplash-img7.png";
+import ImgSomeplash7 from "../../../assets/images/photos/someplash/someplash-img7.webp";
 import ImgSomeplash8 from "../../../assets/images/photos/someplash/someplash-img8.png";
-import ImgSomeplash9 from "../../../assets/images/photos/someplash/someplash-img9.png";
+import ImgSomeplash9 from "../../../assets/images/photos/someplash/someplash-img9.webp";
 import ImgSomeplash10 from "../../../assets/images/photos/someplash/someplash-img10.png";
 import ImgSomeplash11 from "../../../assets/images/photos/someplash/someplash-img11.png";
-import ImgSomeplash12 from "../../../assets/images/photos/someplash/someplash-img12.png";
-import ImgSomeplash13 from "../../../assets/images/photos/someplash/someplash-img13.png";
+import ImgSomeplash12 from "../../../assets/images/photos/someplash/someplash-img12.webp";
+import ImgSomeplash13 from "../../../assets/images/photos/someplash/someplash-img13.webp";
 
 const RunSomeplash = () => {
   return (
