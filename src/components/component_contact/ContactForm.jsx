@@ -161,7 +161,7 @@ const ContactForm = () => {
               </label>
               <input
                 className="input"
-                type="number"
+                type="tel"
                 name="phone"
                 id="phone"
                 placeholder="928646027"
